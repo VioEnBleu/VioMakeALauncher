@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Configuration status="WARN">
     <Appenders>
-        <Console name="SysOut" target="SYSTEM_OUT">
-            <LegacyXMLLayout />
-        </Console>
         <RollingRandomAccessFile name="File" fileName="logs/latest.log" filePattern="logs/%d{yyyy-MM-dd}-%i.log.gz">
             <Policies>
                 <TimeBasedTriggeringPolicy />
